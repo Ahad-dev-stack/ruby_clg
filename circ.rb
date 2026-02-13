@@ -5,6 +5,6 @@ area = Math::PI * r * r
 
 perimeter = 2 * Math::PI * r 
 
-puts "Area of circle : #{area}"
+puts "Area of circle : #{area.round(2)}"
 
-puts "perimeter of circle : #{perimeter}"
+puts "perimeter of circle : #{perimeter.round(2)}"
