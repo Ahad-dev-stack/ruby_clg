@@ -13,11 +13,6 @@ arr.each { |x| print x, " " }
 puts
 
 puts "\nUsing slice (index 1, length 2):"
-puts arr.slice(1, 2).inspect
-puts "Array after slice:"
-puts arr.inspect
-
-puts "\nUsing slice! (index 1, length 2):"
 removed = arr.slice!(1, 2)
 puts "Removed elements: #{removed.inspect}"
 puts "Array after slice!: #{arr.inspect}"
@@ -45,6 +40,10 @@ puts arr.inspect
 arr.delete(999)
 puts "\nAfter delete(999):"
 puts arr.inspect
+
+unique_elements = arr.uniq
+puts "\nUnique Elements:"
+puts unique_elements.inspect
 
 arr.delete_at(0)
 puts "\nAfter delete_at(0):"
