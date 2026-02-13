@@ -1,7 +1,16 @@
-puts "Enter filename: "
-filename = gets.chomp
+print "Enter file name: "
+path = gets.chomp
 
-extension = File.extname(filename)
+if File.exist?(path)
+  puts "Full Path: #{File.expand_path(path)}"
 
-puts "The file extension is: #{extension}"
-
+  if File.file?(path)
+ 	puts "File exists"
+    puts "Type: File"
+    puts "Extension: #{File.extname(path)}"
+  else
+    puts "Type: Folder"
+  end
+else
+  puts "Path does not exist."
+end
