@@ -23,3 +23,10 @@ puts passed
 
 print "\nEnter subject to delete: "
 del = gets.chomp
+
+if marks.key?(del)
+    marks.delete(del)
+    puts "Delete #{del} successfully"
+else
+    puts "Subject not found"
+end
