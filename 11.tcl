@@ -1,3 +1,5 @@
+#!/usr/bin/tclsh
+
 puts "Enter a number:"
 gets stdin num
 
