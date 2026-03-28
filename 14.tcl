@@ -9,10 +9,12 @@ foreach elem [split $input] {
     lappend mylist $elem
 }
 
-puts "Traversing the list:"
+puts "List created: $mylist"
+
+puts "\nTraversing the list:"
 foreach item $mylist {
     puts $item
 }
 
 set concatenated [join $mylist ", "]
-puts "Concatenated list: $concatenated"
+puts "\nConcatenated list: $concatenated"
