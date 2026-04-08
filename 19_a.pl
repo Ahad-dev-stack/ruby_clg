@@ -43,3 +43,24 @@ print "$o_str\n";
 print "\nUsing e (evaluate replacement)\n";
 (my $e_str = $str) =~ s/(\d+)/$1 * 2/e;
 print "$e_str\n";
+
+
+
+#!/usr/bin/perl
+
+print "Enter a string: ";
+$str = <STDIN>;
+chomp($str);
+
+print "Enter word to replace: ";
+$old = <STDIN>;
+chomp($old);
+
+print "Enter new word: ";
+$new = <STDIN>;
+chomp($new);
+
+print "\nSingle-line (s):\n";
+$temp = $str;
+$temp =~ s/$old/$new/;
+print "$temp\n";
