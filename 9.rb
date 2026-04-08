@@ -41,6 +41,21 @@ arr.delete(999)
 puts "\nAfter delete(999):"
 puts arr.inspect
 
+puts "\nReversed Array:"
+puts arr.reverse.inspect
+
+puts "\nSorted Array:"
+puts arr.sort.inspect
+
+puts "\nMinimum value:"
+puts arr.min
+
+puts "\nMaximum value:"
+puts arr.max
+
+puts "\nCount of elements:"
+puts arr.count
+
 unique_elements = arr.uniq
 puts "\nUnique Elements:"
 puts unique_elements.inspect
